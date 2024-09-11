@@ -1,61 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Student Information</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Example</title> <!-- Page Title -->
     <style>
+        /* Add some basic styling */
         body {
-            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text */
+        }
+        h1 {
+            color: #ff6347; /* Tomato color for headings */
         }
         table {
             border-collapse: collapse;
             width: 100%;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
         }
         th, td {
-            border: 1px solid black;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
-        th {
-            background-color: #4CAF50;
-            color: white;
+        ul, ol {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Student Information</h1>
 
-    <p>This webpage provides information about the students in our class.</p>
+    <!-- Page Title (H1) -->
+    <h1>Welcome to My Sample Webpage</h1>
 
-    <h2>Student List</h2>
+    <!-- Comment Example -->
+    <!-- This is a comment, it will not appear on the page -->
+
+    <!-- Image with a link -->
+    <p>Here is an image of a placeholder:</p>
+    <a href="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/150" alt="Placeholder image" style="border: 2px solid #000;">
+    </a>
+    <br><br>
+
+    <!-- Blockquote Example -->
+    <blockquote cite="https://www.example.com">
+        "This is a sample quotation from a source. It provides some important insight into the topic."
+    </blockquote>
+
+    <!-- Short quote using the <q> tag -->
+    <p>Here is a short quotation: <q>Live as if you were to die tomorrow. Learn as if you were to live forever.</q> - Mahatma Gandhi</p>
+
+    <!-- Table with Rowspan and Colspan -->
+    <h2>Table Example with Rowspan and Colspan</h2>
     <table>
         <tr>
-            <th>Student ID</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Grade</th>
+            <th>Item</th>
+            <th colspan="2">Description</th> <!-- Colspan merges two columns -->
         </tr>
         <tr>
-            <td>101</td>
-            <td>John Doe</td>
-            <td>20</td>
-            <td>A</td>
+            <td rowspan="2">Fruit</td> <!-- Rowspan merges two rows -->
+            <td>Apple</td>
+            <td>A sweet red fruit</td>
         </tr>
         <tr>
-            <td>102</td>
-            <td>Jane Smith</td>
-            <td>19</td>
-            <td>B+</td>
+            <td>Banana</td>
+            <td>A long yellow fruit</td>
         </tr>
-        </table>
+    </table>
 
-    <h2>Student Achievements</h2>
+    <!-- Ordered List -->
+    <h2>My Favorite Hobbies (Ordered List)</h2>
+    <ol>
+        <li>Reading</li>
+        <li>Playing Sports</li>
+        <li>Coding</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <h2>Things I Need for a Trip (Unordered List)</h2>
     <ul>
-        <li>John Doe won the Math Olympiad.</li>
-        <li>Jane Smith was awarded the Best Student Award.</li>
-        </ul>
+        <li>Clothes</li>
+        <li>Toiletries</li>
+        <li>Snacks</li>
+    </ul>
 
-    <h2>Contact Information</h2>
-    <p>For inquiries or to contact the students, please email [email protected]</p>
+    <!-- Links Example -->
+    <p>For more information, visit <a href="https://www.example.com" style="color: blue;">Example Website</a>.</p>
+
 </body>
 </html>
