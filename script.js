@@ -95,3 +95,17 @@ if (contactForm) {
     }
   });
 }
+
+const certContainer = document.querySelector('.certificates-container');
+const leftBtn = document.querySelector('.cert-nav.left');
+const rightBtn = document.querySelector('.cert-nav.right');
+
+if (certContainer && leftBtn && rightBtn) {
+  rightBtn.addEventListener('click', () => {
+    certContainer.scrollBy({ left: 600, behavior: 'smooth' });
+  });
+
+  leftBtn.addEventListener('click', () => {
+    certContainer.scrollBy({ left: -600, behavior: 'smooth' });
+  });
+}
